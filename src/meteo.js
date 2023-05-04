@@ -35,7 +35,7 @@ async function getWeather(location) {
   try {
     const response = await fetch(
       `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=no`,
-      { mode: "cors" }
+      {  mode: 'cors'}
     );
     if (!response.ok) {
       handleError(response.status);
